@@ -7,15 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2D8B7223A3F77100ADBE02 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2D8B7023A3F77100ADBE02 /* DataModel.xcdatamodeld */; };
+		FA43053E23AAA0F100E74E47 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43053D23AAA0F100E74E47 /* InventoryViewController.swift */; };
+		FA43054023AAA28E00E74E47 /* InventoryTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43053F23AAA28E00E74E47 /* InventoryTabItem.swift */; };
 		FAC94383239EB4470079A17E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC94382239EB4470079A17E /* AppDelegate.swift */; };
 		FAC94385239EB4470079A17E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC94384239EB4470079A17E /* SceneDelegate.swift */; };
 		FAC94387239EB4470079A17E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC94386239EB4470079A17E /* ViewController.swift */; };
 		FAC9438A239EB4470079A17E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC94388239EB4470079A17E /* Main.storyboard */; };
-		FAC9438D239EB4480079A17E /* ScavengerHuntv2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC9438B239EB4480079A17E /* ScavengerHuntv2.xcdatamodeld */; };
 		FAC9438F239EB4490079A17E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC9438E239EB4490079A17E /* Assets.xcassets */; };
 		FAC94392239EB4490079A17E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC94390239EB4490079A17E /* LaunchScreen.storyboard */; };
 		FAC9439D239EB4490079A17E /* ScavengerHuntv2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9439C239EB4490079A17E /* ScavengerHuntv2Tests.swift */; };
 		FAC943A8239EB4490079A17E /* ScavengerHuntv2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC943A7239EB4490079A17E /* ScavengerHuntv2UITests.swift */; };
+		FAC943B6239EB47F0079A17E /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943B5239EB47F0079A17E /* GoogleMapsBase.framework */; };
+		FAC943B9239EB4940079A17E /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943B7239EB4930079A17E /* GoogleMapsCore.framework */; };
+		FAC943BA239EB4940079A17E /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943B8239EB4940079A17E /* GoogleMaps.framework */; };
+		FAC943BC239EB4C60079A17E /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAC943BB239EB4C60079A17E /* GoogleMaps.bundle */; };
+		FAC943BF239EB4E90079A17E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943BE239EB4E90079A17E /* Accelerate.framework */; };
+		FAC943C1239EB4F30079A17E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943C0239EB4F30079A17E /* CoreData.framework */; };
+		FAC943C3239EB4F90079A17E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943C2239EB4F90079A17E /* CoreGraphics.framework */; };
+		FAC943C5239EB4FE0079A17E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943C4239EB4FE0079A17E /* CoreImage.framework */; };
+		FAC943C7239EB5040079A17E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943C6239EB5040079A17E /* CoreLocation.framework */; };
+		FAC943C9239EB50A0079A17E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943C8239EB50A0079A17E /* CoreTelephony.framework */; };
+		FAC943CB239EB50F0079A17E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943CA239EB50F0079A17E /* CoreText.framework */; };
+		FAC943CD239EB51A0079A17E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943CC239EB51A0079A17E /* GLKit.framework */; };
+		FAC943CF239EB5210079A17E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943CE239EB5210079A17E /* ImageIO.framework */; };
+		FAC943D1239EB5340079A17E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943D0239EB5340079A17E /* libc++.tbd */; };
+		FAC943D3239EB53E0079A17E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943D2239EB53E0079A17E /* libz.tbd */; };
+		FAC943D5239EB5450079A17E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943D4239EB5450079A17E /* OpenGLES.framework */; };
+		FAC943D7239EB54A0079A17E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943D6239EB54A0079A17E /* QuartzCore.framework */; };
+		FAC943D9239EB5500079A17E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943D8239EB5500079A17E /* SystemConfiguration.framework */; };
+		FAC943DB239EB5550079A17E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC943DA239EB5550079A17E /* UIKit.framework */; };
+		FAC943DD239EB98C0079A17E /* GIFSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC943DC239EB98C0079A17E /* GIFSupport.swift */; };
+		FAC943E0239EBE320079A17E /* player.gif in Resources */ = {isa = PBXBuildFile; fileRef = FAC943DF239EBE320079A17E /* player.gif */; };
+		FAC943E5239EBE440079A17E /* EveningStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = FAC943E2239EBE440079A17E /* EveningStyle.json */; };
+		FAC943E6239EBE440079A17E /* DayStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = FAC943E3239EBE440079A17E /* DayStyle.json */; };
+		FAC943E7239EBE440079A17E /* NightStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = FAC943E4239EBE440079A17E /* NightStyle.json */; };
+		FAC943E9239EC5A40079A17E /* diamond1.gif in Resources */ = {isa = PBXBuildFile; fileRef = FAC943E8239EC5A40079A17E /* diamond1.gif */; };
+		FADEE4C223A2BDD200383864 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEE4C123A2BDD200383864 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +64,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FAC9437F239EB4470079A17E /* ScavengerHuntv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScavengerHuntv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2D8B7123A3F77100ADBE02 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		FA43053D23AAA0F100E74E47 /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		FA43053F23AAA28E00E74E47 /* InventoryTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTabItem.swift; sourceTree = "<group>"; };
+		FAC9437F239EB4470079A17E /* ScavengerHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScavengerHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC94382239EB4470079A17E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC94384239EB4470079A17E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAC94386239EB4470079A17E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAC94389239EB4470079A17E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAC9438C239EB4480079A17E /* ScavengerHuntv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScavengerHuntv2.xcdatamodel; sourceTree = "<group>"; };
 		FAC9438E239EB4490079A17E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC94391239EB4490079A17E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC94393239EB4490079A17E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +81,32 @@
 		FAC943A3239EB4490079A17E /* ScavengerHuntv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScavengerHuntv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC943A7239EB4490079A17E /* ScavengerHuntv2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerHuntv2UITests.swift; sourceTree = "<group>"; };
 		FAC943A9239EB4490079A17E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC943B5239EB47F0079A17E /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		FAC943B7239EB4930079A17E /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
+		FAC943B8239EB4940079A17E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		FAC943BB239EB4C60079A17E /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		FAC943BE239EB4E90079A17E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FAC943C0239EB4F30079A17E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FAC943C2239EB4F90079A17E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAC943C4239EB4FE0079A17E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		FAC943C6239EB5040079A17E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FAC943C8239EB50A0079A17E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FAC943CA239EB50F0079A17E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FAC943CC239EB51A0079A17E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FAC943CE239EB5210079A17E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FAC943D0239EB5340079A17E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FAC943D2239EB53E0079A17E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FAC943D4239EB5450079A17E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FAC943D6239EB54A0079A17E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FAC943D8239EB5500079A17E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FAC943DA239EB5550079A17E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAC943DC239EB98C0079A17E /* GIFSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFSupport.swift; sourceTree = "<group>"; };
+		FAC943DF239EBE320079A17E /* player.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = player.gif; sourceTree = "<group>"; };
+		FAC943E2239EBE440079A17E /* EveningStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EveningStyle.json; sourceTree = "<group>"; };
+		FAC943E3239EBE440079A17E /* DayStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DayStyle.json; sourceTree = "<group>"; };
+		FAC943E4239EBE440079A17E /* NightStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NightStyle.json; sourceTree = "<group>"; };
+		FAC943E8239EC5A40079A17E /* diamond1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = diamond1.gif; sourceTree = "<group>"; };
+		FADEE4C123A2BDD200383864 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +114,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC943DB239EB5550079A17E /* UIKit.framework in Frameworks */,
+				FAC943D9239EB5500079A17E /* SystemConfiguration.framework in Frameworks */,
+				FAC943D7239EB54A0079A17E /* QuartzCore.framework in Frameworks */,
+				FAC943D5239EB5450079A17E /* OpenGLES.framework in Frameworks */,
+				FAC943D3239EB53E0079A17E /* libz.tbd in Frameworks */,
+				FAC943D1239EB5340079A17E /* libc++.tbd in Frameworks */,
+				FAC943CF239EB5210079A17E /* ImageIO.framework in Frameworks */,
+				FAC943CD239EB51A0079A17E /* GLKit.framework in Frameworks */,
+				FAC943CB239EB50F0079A17E /* CoreText.framework in Frameworks */,
+				FAC943C9239EB50A0079A17E /* CoreTelephony.framework in Frameworks */,
+				FAC943C7239EB5040079A17E /* CoreLocation.framework in Frameworks */,
+				FAC943C5239EB4FE0079A17E /* CoreImage.framework in Frameworks */,
+				FAC943C3239EB4F90079A17E /* CoreGraphics.framework in Frameworks */,
+				FAC943C1239EB4F30079A17E /* CoreData.framework in Frameworks */,
+				FAC943BF239EB4E90079A17E /* Accelerate.framework in Frameworks */,
+				FAC943BA239EB4940079A17E /* GoogleMaps.framework in Frameworks */,
+				FAC943B6239EB47F0079A17E /* GoogleMapsBase.framework in Frameworks */,
+				FAC943B9239EB4940079A17E /* GoogleMapsCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,17 +155,22 @@
 		FAC94376239EB4470079A17E = {
 			isa = PBXGroup;
 			children = (
+				FAC943BB239EB4C60079A17E /* GoogleMaps.bundle */,
+				FAC943B8239EB4940079A17E /* GoogleMaps.framework */,
+				FAC943B7239EB4930079A17E /* GoogleMapsCore.framework */,
+				FAC943B5239EB47F0079A17E /* GoogleMapsBase.framework */,
 				FAC94381239EB4470079A17E /* ScavengerHuntv2 */,
 				FAC9439B239EB4490079A17E /* ScavengerHuntv2Tests */,
 				FAC943A6239EB4490079A17E /* ScavengerHuntv2UITests */,
 				FAC94380239EB4470079A17E /* Products */,
+				FAC943BD239EB4E90079A17E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FAC94380239EB4470079A17E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAC9437F239EB4470079A17E /* ScavengerHuntv2.app */,
+				FAC9437F239EB4470079A17E /* ScavengerHunt.app */,
 				FAC94398239EB4490079A17E /* ScavengerHuntv2Tests.xctest */,
 				FAC943A3239EB4490079A17E /* ScavengerHuntv2UITests.xctest */,
 			);
@@ -101,14 +180,20 @@
 		FAC94381239EB4470079A17E /* ScavengerHuntv2 */ = {
 			isa = PBXGroup;
 			children = (
+				FAC943E1239EBE440079A17E /* MapViews */,
+				FAC943DE239EBE320079A17E /* GIF */,
 				FAC94382239EB4470079A17E /* AppDelegate.swift */,
 				FAC94384239EB4470079A17E /* SceneDelegate.swift */,
 				FAC94386239EB4470079A17E /* ViewController.swift */,
+				FAC943DC239EB98C0079A17E /* GIFSupport.swift */,
 				FAC94388239EB4470079A17E /* Main.storyboard */,
 				FAC9438E239EB4490079A17E /* Assets.xcassets */,
 				FAC94390239EB4490079A17E /* LaunchScreen.storyboard */,
 				FAC94393239EB4490079A17E /* Info.plist */,
-				FAC9438B239EB4480079A17E /* ScavengerHuntv2.xcdatamodeld */,
+				FADEE4C123A2BDD200383864 /* SettingsViewController.swift */,
+				FA2D8B7023A3F77100ADBE02 /* DataModel.xcdatamodeld */,
+				FA43053D23AAA0F100E74E47 /* InventoryViewController.swift */,
+				FA43053F23AAA28E00E74E47 /* InventoryTabItem.swift */,
 			);
 			path = ScavengerHuntv2;
 			sourceTree = "<group>";
@@ -131,6 +216,47 @@
 			path = ScavengerHuntv2UITests;
 			sourceTree = "<group>";
 		};
+		FAC943BD239EB4E90079A17E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC943DA239EB5550079A17E /* UIKit.framework */,
+				FAC943D8239EB5500079A17E /* SystemConfiguration.framework */,
+				FAC943D6239EB54A0079A17E /* QuartzCore.framework */,
+				FAC943D4239EB5450079A17E /* OpenGLES.framework */,
+				FAC943D2239EB53E0079A17E /* libz.tbd */,
+				FAC943D0239EB5340079A17E /* libc++.tbd */,
+				FAC943CE239EB5210079A17E /* ImageIO.framework */,
+				FAC943CC239EB51A0079A17E /* GLKit.framework */,
+				FAC943CA239EB50F0079A17E /* CoreText.framework */,
+				FAC943C8239EB50A0079A17E /* CoreTelephony.framework */,
+				FAC943C6239EB5040079A17E /* CoreLocation.framework */,
+				FAC943C4239EB4FE0079A17E /* CoreImage.framework */,
+				FAC943C2239EB4F90079A17E /* CoreGraphics.framework */,
+				FAC943C0239EB4F30079A17E /* CoreData.framework */,
+				FAC943BE239EB4E90079A17E /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAC943DE239EBE320079A17E /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				FAC943E8239EC5A40079A17E /* diamond1.gif */,
+				FAC943DF239EBE320079A17E /* player.gif */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
+		FAC943E1239EBE440079A17E /* MapViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAC943E2239EBE440079A17E /* EveningStyle.json */,
+				FAC943E3239EBE440079A17E /* DayStyle.json */,
+				FAC943E4239EBE440079A17E /* NightStyle.json */,
+			);
+			path = MapViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,7 +274,7 @@
 			);
 			name = ScavengerHuntv2;
 			productName = ScavengerHuntv2;
-			productReference = FAC9437F239EB4470079A17E /* ScavengerHuntv2.app */;
+			productReference = FAC9437F239EB4470079A17E /* ScavengerHunt.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FAC94397239EB4490079A17E /* ScavengerHuntv2Tests */ = {
@@ -236,8 +362,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC94392239EB4490079A17E /* LaunchScreen.storyboard in Resources */,
+				FAC943E0239EBE320079A17E /* player.gif in Resources */,
+				FAC943E7239EBE440079A17E /* NightStyle.json in Resources */,
+				FAC943E9239EC5A40079A17E /* diamond1.gif in Resources */,
 				FAC9438F239EB4490079A17E /* Assets.xcassets in Resources */,
 				FAC9438A239EB4470079A17E /* Main.storyboard in Resources */,
+				FAC943E6239EBE440079A17E /* DayStyle.json in Resources */,
+				FAC943E5239EBE440079A17E /* EveningStyle.json in Resources */,
+				FAC943BC239EB4C60079A17E /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +394,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA43053E23AAA0F100E74E47 /* InventoryViewController.swift in Sources */,
+				FAC943DD239EB98C0079A17E /* GIFSupport.swift in Sources */,
 				FAC94387239EB4470079A17E /* ViewController.swift in Sources */,
-				FAC9438D239EB4480079A17E /* ScavengerHuntv2.xcdatamodeld in Sources */,
+				FA2D8B7223A3F77100ADBE02 /* DataModel.xcdatamodeld in Sources */,
 				FAC94383239EB4470079A17E /* AppDelegate.swift in Sources */,
+				FA43054023AAA28E00E74E47 /* InventoryTabItem.swift in Sources */,
 				FAC94385239EB4470079A17E /* SceneDelegate.swift in Sources */,
+				FADEE4C223A2BDD200383864 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,13 +576,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5EK52TQYE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ScavengerHuntv2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.savion.ScavengerHuntv2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ScavengerHunt;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,13 +599,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5EK52TQYE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ScavengerHuntv2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.savion.ScavengerHuntv2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ScavengerHunt;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -596,13 +742,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FAC9438B239EB4480079A17E /* ScavengerHuntv2.xcdatamodeld */ = {
+		FA2D8B7023A3F77100ADBE02 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FAC9438C239EB4480079A17E /* ScavengerHuntv2.xcdatamodel */,
+				FA2D8B7123A3F77100ADBE02 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = FAC9438C239EB4480079A17E /* ScavengerHuntv2.xcdatamodel */;
-			path = ScavengerHuntv2.xcdatamodeld;
+			currentVersion = FA2D8B7123A3F77100ADBE02 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
