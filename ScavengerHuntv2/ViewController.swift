@@ -240,11 +240,15 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         return randomString
     }
     
-    func deleteAllData(entity: String){
+    func deleteAllData(entity: String) {
         let ReqVar = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
         let DelAllReqVar = NSBatchDeleteRequest(fetchRequest: ReqVar)
-        do { try AppDelegate.persistentContainer().viewContext.execute(DelAllReqVar) }
-        catch { print(error) }
+        do {
+            try AppDelegate.persistentContainer().viewContext.execute(DelAllReqVar)
+            
+        } catch {
+            print(error)
+        }
     }
     
     func addRandomMarkers() {
@@ -264,7 +268,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         }
     }
     
-    func addItemToInventory(item: String){
+    func addItemToInventory(item: String) {
         let context = AppDelegate.persistentContainer().viewContext
         
         let inventory = NSEntityDescription.entity(forEntityName: "Inventory", in: context)!
@@ -281,7 +285,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         }
     }
     
-    func fetchData(){
+    func fetchData() {
         let managedContext =
           AppDelegate.persistentContainer().viewContext
         
