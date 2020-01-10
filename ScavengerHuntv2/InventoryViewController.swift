@@ -28,9 +28,9 @@ class InventoryViewController: UIViewController {
         request.returnsObjectsAsFaults = false
         do{
             let results = try managedContext.fetch(request)
-            for res in results as! [NSManagedObject] {
-                let diamondMarkerCount = res.value(forKey: "diamondmarkers")
-                print(diamondMarkerCount as Any)
+            for item in results as! [NSManagedObject] {
+                let diamondMarkersCount = item.value(forKey: "diamondmarkers") as! String
+                print(diamondMarkersCount)
             }
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
