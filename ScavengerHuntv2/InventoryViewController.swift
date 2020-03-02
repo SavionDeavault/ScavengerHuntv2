@@ -18,6 +18,15 @@ class InventoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        load()
+        print("Loaded")
+    }
+    
+    @IBAction func refreshButton(_ sender: UIButton) {
+        load()
+    }
+    
+    func load() {
         diamondsImageView.image = UIImage.gifImageWithName("diamond1")
         diamondsImageView.largeContentTitle = "Test!"
         textField.isEnabled = false

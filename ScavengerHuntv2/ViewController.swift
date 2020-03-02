@@ -148,7 +148,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
     
     func centerMapAtUserLocation() {
         //Uncomment isMyLocationEnabled to hide blue marker underneath the player
-        //mapView.isMyLocationEnabled = true
+       // mapView.isMyLocationEnabled = true
         userMarkerimageView.frame = CGRect(x: 0, y: 0, width: 40, height: 70)
         
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!, zoom: zoomLevel, bearing: bearingAngle, viewingAngle: angleOfView)
@@ -290,7 +290,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
                 let diamondMarkersCount = item.value(forKey: "diamondmarkers") as! Int
                 print(diamondMarkersCount)
                 if diamondMarkersCount >= 1{
-                    value.setValue(diamondMarkersCount + 1, forKeyPath: "diamondmarkers")
+                    value.setValue((diamondMarkersCount + 1), forKeyPath: "diamondmarkers")
                 } else {
                     value.setValue(1, forKeyPath: "diamondmarkers")
                 }

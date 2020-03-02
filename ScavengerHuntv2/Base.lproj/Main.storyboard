@@ -115,11 +115,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zuM-K5-XhX">
                                 <rect key="frame" x="16" y="44" width="148" height="135"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Counter!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gj-BQ-LOW">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="N/A" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="3gj-BQ-LOW">
                                 <rect key="frame" x="160" y="145" width="97" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More items soon!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uA4-TC-579">
@@ -131,6 +131,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-mc-V5y">
+                                <rect key="frame" x="307" y="44" width="52" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="V9I-xh-ZNd"/>
+                                    <constraint firstAttribute="height" constant="61" id="WG3-vF-WjV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="refreshButton:" destination="fVv-rq-7al" eventType="touchUpInside" id="co0-Fl-vP5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -139,11 +151,13 @@
                             <constraint firstItem="zuM-K5-XhX" firstAttribute="leading" secondItem="8Dl-JN-63p" secondAttribute="leadingMargin" id="BMm-sU-0eD"/>
                             <constraint firstItem="zuM-K5-XhX" firstAttribute="bottom" secondItem="3gj-BQ-LOW" secondAttribute="bottom" id="Fnc-5X-me9"/>
                             <constraint firstItem="uA4-TC-579" firstAttribute="leading" secondItem="Qzu-iN-voQ" secondAttribute="leading" id="Lxq-S0-XHP"/>
+                            <constraint firstItem="S3q-mc-V5y" firstAttribute="trailing" secondItem="8Dl-JN-63p" secondAttribute="trailingMargin" id="bTH-vV-aYJ"/>
                             <constraint firstItem="Qzu-iN-voQ" firstAttribute="trailing" secondItem="3gj-BQ-LOW" secondAttribute="trailing" constant="118" id="bfx-V1-haV"/>
                             <constraint firstItem="Qzu-iN-voQ" firstAttribute="bottom" secondItem="uA4-TC-579" secondAttribute="bottom" constant="310" id="cf0-FY-nrf"/>
                             <constraint firstItem="Qzu-iN-voQ" firstAttribute="trailing" secondItem="zuM-K5-XhX" secondAttribute="trailing" constant="211" id="eek-gz-Vby"/>
                             <constraint firstItem="zuM-K5-XhX" firstAttribute="top" secondItem="Qzu-iN-voQ" secondAttribute="top" id="kCD-iZ-6hq"/>
                             <constraint firstItem="3gj-BQ-LOW" firstAttribute="top" secondItem="Qzu-iN-voQ" secondAttribute="top" constant="101" id="lYm-bX-zwf"/>
+                            <constraint firstItem="S3q-mc-V5y" firstAttribute="top" secondItem="zuM-K5-XhX" secondAttribute="top" id="oHg-8x-AA6"/>
                             <constraint firstItem="3gj-BQ-LOW" firstAttribute="leading" secondItem="Qzu-iN-voQ" secondAttribute="leading" constant="160" id="xBZ-dx-mRs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qzu-iN-voQ"/>
@@ -161,6 +175,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
         <image name="bag.fill" catalog="system" width="64" height="64"/>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
