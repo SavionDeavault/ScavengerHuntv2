@@ -29,13 +29,21 @@ class InventoryViewController: UIViewController {
         do{
             let results = try managedContext.fetch(request)
             for item in results as! [NSManagedObject] {
-                let diamondMarkersCount = item.value(forKey: "diamondmarkers") as! String
+                let diamondMarkersCount = item.value(forKey: "diamondmarkers") as! Int
                 print(diamondMarkersCount)
+                textField.text = "x\(diamondMarkersCount) diamonds"
             }
         } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-            
+            print("Could not fetch. \(error), \(error.userInfo)")
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
     
 }

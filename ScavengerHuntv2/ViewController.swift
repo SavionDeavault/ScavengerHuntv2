@@ -71,7 +71,15 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!, zoom: zoomLevel, bearing: bearingAngle, viewingAngle: angleOfView)
            self.mapView.camera = camera
         
-           setMapTheme(theme: "Night")
+             //set map mode
+            let hour = Calendar.current.component(.hour, from: Date())
+            switch hour {
+                case 7..<15 : setMapTheme(theme: "Day")
+                
+                case 15..<18 : setMapTheme(theme: "Evening")
+                
+                default: setMapTheme(theme: "Night")
+            }
            
            //Interaction with map
            self.mapView.settings.tiltGestures = false
@@ -262,7 +270,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
             marker = GMSMarker(position: position)
             marker?.map = mapView
             marker?.iconView = markerView
-            marker?.title = "diamond-markers"
+            marker?.title = "1"
             print("Marker count \(i+1)")
             markerCount = i+1
         }
@@ -274,8 +282,23 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         let inventory = NSEntityDescription.entity(forEntityName: "Inventory", in: context)!
         
         let value = NSManagedObject(entity: inventory, insertInto: context)
+        
+        do{
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Inventory")
+            let results = try context.fetch(request)
+            for item in results as! [NSManagedObject] {
+                let diamondMarkersCount = item.value(forKey: "diamondmarkers") as! Int
+                print(diamondMarkersCount)
+                if diamondMarkersCount >= 1{
+                    value.setValue(diamondMarkersCount + 1, forKeyPath: "diamondmarkers")
+                } else {
+                    value.setValue(1, forKeyPath: "diamondmarkers")
+                }
+            }
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
             
-        value.setValue(item, forKeyPath: "diamondmarkers")
         
         do {
           try context.save()
