@@ -216,7 +216,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         let x : Double = w * cos(t)
         let y : Double = w * sin(t)
 
-        // Adjust the x-coordinate for the shrinking of the east-west distances
+        // Adjust the x-+ for the shrinking of the east-west distances
         //in cos converting degree to radian
         let new_x : Double = x / cos(lat * .pi / 180 )
 
